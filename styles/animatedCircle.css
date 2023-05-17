@@ -1,0 +1,90 @@
+.wrapper {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.frame {
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  position: absolute;
+  background-color: rgb(233, 237, 241);
+  color: rgb(22, 26, 26);
+  height: 400px;
+  width: 400px;
+  border-radius: 2px;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
+
+.center {
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.square {
+  position: absolute;
+  height: 10rem;
+  width: 10rem;
+  border: 1px solid black;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  display: flex;
+}
+
+#a0 {
+  animation-name: a00;
+}
+
+#a1 {
+  animation-name: a10;
+}
+
+#a2 {
+  animation-name: a20;
+}
+
+#a3 {
+  animation-name: a30;
+}
+
+
+
+
+@keyframes a00 {
+  50% {
+    transform: rotate(180deg);
+    border-radius: 50%;
+    height: 2.5rem
+  }
+}
+
+
+
+@keyframes a10 {
+  50% {
+    transform: rotate(160deg);
+    border-radius: 50%;
+    height: 2.5rem
+  }
+}
+
+@keyframes a20 {
+  50% {
+    transform: rotate(140deg);
+    border-radius: 50%;
+    height: 2.5rem
+  }
+}
+
+@keyframes a30 {
+  50% {
+    transform: rotate(120deg);
+    border-radius: 50%;
+    height: 2.5rem
+  }
+}
